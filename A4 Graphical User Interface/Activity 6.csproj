@@ -161,18 +161,6 @@
     <Compile Include="Password Recovery Reset.Designer.cs">
       <DependentUpon>Password Recovery Reset.cs</DependentUpon>
     </Compile>
-    <Compile Include="Password Recovery Verification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Password Recovery Verification.Designer.cs">
-      <DependentUpon>Password Recovery Verification.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Password Recovery.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Password Recovery.Designer.cs">
-      <DependentUpon>Password Recovery.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityQuestion.cs">
@@ -219,12 +207,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Password Recovery Reset.resx">
       <DependentUpon>Password Recovery Reset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Password Recovery Verification.resx">
-      <DependentUpon>Password Recovery Verification.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Password Recovery.resx">
-      <DependentUpon>Password Recovery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
