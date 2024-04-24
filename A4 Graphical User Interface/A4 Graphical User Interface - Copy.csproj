@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F03CF7A8-328B-4C67-9EB9-EE45ABAAF10C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>A4_Graphical_User_Interface</RootNamespace>
+    <AssemblyName>A4 Graphical User Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adopter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adopter.Designer.cs">
+      <DependentUpon>Adopter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoption.Designer.cs">
+      <DependentUpon>Adoption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animals.Designer.cs">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password Recovery Reset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Recovery Reset.Designer.cs">
+      <DependentUpon>Password Recovery Reset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password Recovery Verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Recovery Verification.Designer.cs">
+      <DependentUpon>Password Recovery Verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password Recovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Recovery.Designer.cs">
+      <DependentUpon>Password Recovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Generator.Designer.cs">
+      <DependentUpon>Report Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shelter.Designer.cs">
+      <DependentUpon>Shelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Volunteer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Volunteer.Designer.cs">
+      <DependentUpon>Staff_Volunteer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adopter.resx">
+      <DependentUpon>Adopter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoption.resx">
+      <DependentUpon>Adoption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animals.resx">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Recovery Reset.resx">
+      <DependentUpon>Password Recovery Reset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Recovery Verification.resx">
+      <DependentUpon>Password Recovery Verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Recovery.resx">
+      <DependentUpon>Password Recovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report Generator.resx">
+      <DependentUpon>Report Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelter.resx">
+      <DependentUpon>Shelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Volunteer.resx">
+      <DependentUpon>Staff_Volunteer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
